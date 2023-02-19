@@ -1,0 +1,52 @@
+{
+  "name": "prueba-5627",
+  "displayName": "ZonaBit",
+  "description": "Esto es una prueba",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:prueba-5627.zonabit",
+    "onCommand:prueba-5627.zonabit-go"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "prueba-5627.zonabit",
+        "title": "ZonaBit"
+      },
+      {
+        "command": "prueba-5627.zonabit-go",
+        "title": "Ir a ZonaBit"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "pnpm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.1",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.75.0",
+    "@vscode/test-electron": "^2.2.2",
+    "eslint": "^8.33.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.1.0",
+    "standard": "^17.0.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "axios": "^1.3.3",
+    "cheerio": "1.0.0-rc.12",
+    "fast-xml-parser": "^4.1.2",
+    "request": "^2.88.2"
+  }
+}
